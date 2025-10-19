@@ -77,7 +77,7 @@ def send_emails_for_matching(sender: EmailSender, matching: Matching) -> None:
     for pair in matching:
         logging.info(f'Sending mail to {pair.giver}.')
         sender.send(
-            to=pair.taker.email,
+            to=pair.giver.email,
             message_vars=MessageVariables(taker=pair.taker.name),
         )
 

@@ -11,6 +11,7 @@ class Participant:
 
     def __post_init__(self):
         self.exclusions = set(self.exclusions)
+        self.exclusions.add(self.name)
 
 
 def get_duplicated_values(values: Iterable[Hashable]):

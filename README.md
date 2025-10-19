@@ -2,6 +2,7 @@
 
 Finds a secret-santa matching (or in German: Wichteln).
 Run via (from top-level wichteln directory) `PYTHONPATH=. python secret_santa/main.py` and configure as below.
+Ensured to run with python 3.8, incompatible with 3.12.
 
 ## Configuration
 The program is configured through environment variables:

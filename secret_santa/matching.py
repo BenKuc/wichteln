@@ -29,7 +29,6 @@ def _get_matching(group: MatchGroup) -> Matching:
     while available_as_giver:
         givers_name = _random_choice(available_as_giver)
         giver = participants_map[givers_name]
-
         takers_to_choose_from = set(available_as_taker).difference(giver.exclusions)
         if not takers_to_choose_from:
             raise RuntimeError('Ran into deadend.')
